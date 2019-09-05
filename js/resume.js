@@ -26,5 +26,5 @@
   });
 
   //Calcula mis años según el año
-  $('#edad').html(new Date().getFullYear()-1990 + " años")
+  $('#edad').html(new Date().getFullYear() - 1990 + " años")
 })(jQuery); // End of use strict
