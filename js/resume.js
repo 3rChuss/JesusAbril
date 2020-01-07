@@ -27,4 +27,22 @@
 
   //Calcula mis años según el año
   $('#edad').html(new Date().getFullYear() - 1990 + " años")
+
+  //Muestra el certificado según el ID
+  $('a').on('mouseover', function(){
+    switch (this.getAttribute('id')){
+      case 'desarrollo':
+        $(".titulo").append("<img src='img/desarrolloweb.jpg' />").hide().fadeIn(300);
+        break;
+
+      case 'cms':
+        $(".titulo").append("<img src='img/cms.jpg' />").hide().fadeIn(300);;
+        break;
+    }
+  });
+
+  $('a').on('mouseleave', function(){
+    $('.titulo img').remove();
+  });
+
 })(jQuery); // End of use strict
